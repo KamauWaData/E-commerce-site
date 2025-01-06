@@ -1,0 +1,52 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}About{% endblock title %}
+
+
+{% block banner_slide %}
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+       <div class="carousel-inner">
+          <img src="{% static 'styles/images/banner/b1.jpg'%}" class="d-block w-100" alt="banner image">
+       </div>
+       <div class="carousel-item">
+          <img src="{% static 'styles/images/banner/b2.jpg'%}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'styles/images/banner/b3.jpg'%}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'styles/images/banner/b4.jpg'%}" class="d-block w-100" alt="...">
+        </div>
+    </div> 
+{% endblock banner_slide %}
+
+{% block main-content %}
+<div class="container mt-3">
+    <br>
+    <h2 class="text-center">About Us</h2>
+    <br>
+    <div class="row container">
+        <p class="fs-4 text-center">
+        At Gadgets KE, we sell high quality electronics ranging from phones
+        to laptops and gaming consoles. We are located at Moi Avenue, Nairobi Kenya,
+        Muindi Complex store number 45C. 
+        We have been in business since January 2012, and we have been serving our customers
+        for 12 years and going. We're are the best electronics shop in town, please view our 
+        contacts here for more information.
+        </p>
+    </div>
+    <br><br>
+    <h2 class="text-center">Mission</h2>
+    <br>
+    <div class="row container">
+        <p class="fs-4 text-center">
+        At Gadgets KE, we sell high quality electronics ranging from phones
+        to laptops and gaming consoles. We are located at Moi Avenue, Nairobi Kenya,
+        Muindi Complex store number 45C. 
+        We have been in business since January 2012, and we have been serving our customers
+        for 12 years and going. We're are the best electronics shop in town, please view our 
+        contacts here for more information.
+        </p>
+    </div>
+    <br><br>
+{% endblock main-content %}
